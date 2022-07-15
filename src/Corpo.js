@@ -1,0 +1,15 @@
+import LeftContent from "./LeftContent";
+import SideBar from "./SideBar"
+
+
+export default function Corpo(){
+
+    return (
+        <div class="corpo">
+                <LeftContent />
+                <SideBar />
+            </div>
+    )
+
+
+}
