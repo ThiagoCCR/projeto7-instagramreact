@@ -1,12 +1,29 @@
+import React,{useState} from "react";
 import ShowIonIcon from "./ShowIonIcon";
 
 
 export default function FundoPost(props) {
+
+  const [corBotao, setCorBotao] = useState("");
+  const [nameBotao, setNameBotao] = useState("heart-outline")
+
+  function toggleBotao() {
+    if (nameBotao === "heart-outline"){
+      setNameBotao("heart");
+      setCorBotao("red");
+    } else {
+      setNameBotao("heart-outline");
+      setCorBotao("");
+    }
+  }
+
   return (
     <div class="fundo">
       <div class="acoes">
         <div>
-          <ShowIonIcon name="heart-outline" />
+          <ShowIonIcon color={corBotao} 
+          name={nameBotao}
+          onClick={toggleBotao} />
           <ShowIonIcon name="chatbubble-outline" />
           <ShowIonIcon name="paper-plane-outline" />
         </div>

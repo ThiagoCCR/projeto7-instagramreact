@@ -1,7 +1,5 @@
 export default function ShowIonIcon(props){
     return (
-    <>
-      <ion-icon name={props.name}></ion-icon>
-    </>
+<ion-icon onClick ={props.onClick} class={`md hydrated ${props.color}`} name={props.name}></ion-icon>
   )
   }
