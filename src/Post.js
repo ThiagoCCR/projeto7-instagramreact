@@ -1,29 +1,23 @@
 import TopoPost from "./TopoPost";
 import ConteudoPost from "./ConteudoPost";
+import Posts from "./Posts";
 
 
-let allPosts = [
+export default function Post(props) {
+  return (
+    <>
     <div class="post">
     <TopoPost
-      name="ellipsis-horizontal"
-      imgUrl="assets/img/meowed.svg"
-      User="meowed"
+      name= {props.name}
+      imgUrl= {props.imgUrlProf}
+      User= {props.User}
     />
-    <ConteudoPost imgUrl="assets/img/gato-telefone.svg" userImg="assets/img/respondeai.svg" userName="respondeai" likes="outras 101.523 pessoas"/>
-    </div>,
-  <div class="post">
-    <TopoPost
-      name="ellipsis-horizontal"
-      imgUrl="assets/img/barked.svg"
-      User="barked"
-    />
-    <ConteudoPost imgUrl="assets/img/dog.svg" userImg="assets/img/adorable_animals.svg" userName="adorable_animals" likes="outras 99.159 pessoas"/>
-  </div>
-];
-
-
-export default function Post() {
-  return (
-   allPosts.map((value) => value)
-  );
+    <ConteudoPost 
+    imgUrl={props.imgUrl} 
+    userImg={props.userImg} 
+    userName={props.userName} 
+    likes={props.likes}/>
+    </div>
+    </>
+  )
 }
