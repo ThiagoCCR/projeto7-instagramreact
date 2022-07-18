@@ -5,7 +5,7 @@ let storiesArr =[
       {Url:"assets/img/9gag.svg", User:"9gag"},
       {Url:"assets/img/meowed.svg", User:"meowed"},
       {Url:"assets/img/barked.svg", User:"barked"},
-      {        Url:"assets/img/nathanwpylestrangeplanet.svg",
+      {Url:"assets/img/nathanwpylestrangeplanet.svg",
         User:"nathanwpylestrangeplanet"
     },
       {Url:"assets/img/wawawicomics.svg", User:"wawawicomics"},

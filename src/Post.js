@@ -1,6 +1,5 @@
 import TopoPost from "./TopoPost";
 import ConteudoPost from "./ConteudoPost";
-import Posts from "./Posts";
 
 
 export default function Post(props) {

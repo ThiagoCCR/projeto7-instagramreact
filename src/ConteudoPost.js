@@ -46,7 +46,7 @@ export default function ConteudoPost(props) {
         <div class="curtidas">
           <img src={props.userImg} />
           <div class="texto">
-            Curtido por <strong>{props.Username}</strong> e{" "}
+            Curtido por <strong>{props.userName}</strong> e{" "}
             <strong>{props.likes}</strong>
           </div>
         </div>
